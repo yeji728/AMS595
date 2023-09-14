@@ -4,8 +4,8 @@ n = input("Enter a first base: "); % base integer
 
 % check if 2 <= n <= 10.. input is valid 
 if n <2 || n>10 
-    disp("There is an error!!") %만약에 에러이면 어떻게
-    
+   error("There is an error!!") %만약에 에러이면 어떻게
+
 end
 
 
