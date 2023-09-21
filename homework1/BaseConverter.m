@@ -21,6 +21,7 @@ if mod(number ,1) > 0
     error("number should be integer");
 end
 
+% There is limitation on numbers. Number should be positive
 if number < 0
     error("number should be positive");
 end
