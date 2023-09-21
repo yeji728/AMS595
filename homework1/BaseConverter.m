@@ -36,7 +36,7 @@ end
 
 
 % check if m is valid
-m = input("Enter integer:");
+m = input("Enter second base:");
 if m <2 || m>10 
    error("There is an error!! m should be between 2 and 10.") 
 
