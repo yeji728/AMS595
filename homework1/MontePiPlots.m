@@ -21,7 +21,7 @@ ylabel("Execution time");
 
 
 
-% compute the approximaations of pi for various values of n
+% compute the approximations of pi for various values of n
 pi_approximations = zeros(1, length(n_value));
 absolute_error = zeros(1, length(n_value));
 
@@ -35,7 +35,7 @@ end
 %plot absolute errors against n
 subplot(3,1,2)
 plot(n_value, absolute_error,'bo-');
-title("Executiion time against n");
+title("Absolute error against n");
 xlabel("n (number of points ) ");
 ylabel("Absolute Error");
 
@@ -67,18 +67,19 @@ approximated_value = 4 * num_inside_circle / fixed_n;
 
 % Random Points inside the circle and outside the circle
 subplot(3,1,3);
-scatter(x(index_inside), y(index_inside), 1, "b", "filled");
+scatter(x(index_inside), y(index_inside), 10, "b", "filled");
 
 
 % Random Points inside the circle and outside the circle
 hold on;
-scatter(x(~index_inside), y(~index_inside), 1, "r", "filled");
+scatter(x(~index_inside), y(~index_inside), 10, "r", "filled");
 plot_title = sprintf("Random points for n = %d \n Approximated pi is %.7f", fixed_n,approximated_value );
 title(plot_title);
 xlabel("x");
 ylabel("y");
+axis equal;
 
-
+legend("Inside Circle", "Outside Circle");
 
 
 
