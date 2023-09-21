@@ -13,10 +13,10 @@ end
 number = input("Enter integer: ","s"); % number in base-n
 
 % check if m is valid
-m = input("Enter integer:");
+m = input("Enter integer");
 
 
-% base n to decimal(base 10)
+
 n_to_decimal = 0;
 for i = 1 : length(number)
     n_to_decimal = n_to_decimal + str2num(number(i)) * (n^(length(number)-i));
@@ -24,7 +24,6 @@ end
 
 
 
-% decimal to base m
 m_based_num = '';
 
 while n_to_decimal > 0
@@ -35,9 +34,7 @@ while n_to_decimal > 0
 
 end
 
-
-%display the result
-fprintf("Your number in base %d is: %s \n", m,m_based_num)
+disp(m_based_num)
 
 
 
