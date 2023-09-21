@@ -13,7 +13,7 @@ end
 %plot resulting execution times against n. 
 figure;
 subplot(3,1,1);
-plot(n_value, execution_time,'mo');
+plot(n_value, execution_time,'mo-');
 title("Executiion time against n");
 xlabel("n (number of points ) ");
 ylabel("Execution time");

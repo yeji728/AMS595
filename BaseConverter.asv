@@ -14,16 +14,10 @@ number = input("Enter integer: ","s"); % number in base-n
 
 %check if number is integer
 if mod(number ,1) > 0 
-    error("number should be integer");
+    error("number should be integer")
 end
 
-%check if number is valid
-for i = 1 : length(number)
-    if str2double(number(i)) > n
-        error("since base is n, each digit of the number should not exceed n");
-    end
-end
-
+%check number
 
 
 % check if m is valid
