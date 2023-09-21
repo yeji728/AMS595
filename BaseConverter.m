@@ -12,14 +12,19 @@ end
 % number in base n                  
 number = input("Enter integer: ","s"); % number in base-n
 
+
+
 % check if m is valid
 m = input("Enter integer:");
+if m <2 || m>10 
+   error("There is an error!! m should be between 2 and 10.") 
 
+end
 
 % base n to decimal(base 10)
 n_to_decimal = 0;
 for i = 1 : length(number)
-    n_to_decimal = n_to_decimal + str2num(number(i)) * (n^(length(number)-i));
+    n_to_decimal = n_to_decimal + str2double(number(i)) * (n^(length(number)-i));
 end
 
 

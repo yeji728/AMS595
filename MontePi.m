@@ -6,7 +6,7 @@ function [approximated_value, abs_error, relative_error] = MontePi(n)
 
     for i = 1: n
 
-        x = rand(1);
+        x = rand(1); 
         y = rand(1);
         
         if (x^2 + y^2) <= 1
@@ -17,8 +17,10 @@ function [approximated_value, abs_error, relative_error] = MontePi(n)
     %This is for approximated value for pi
     approximated_value = 4 * num_inside_circle / total_points;
 
+    %calculate absolute error
     abs_error = abs(pi-approximated_value);
-
+    
+    %calculate relative error
     relative_error = abs_error / pi;
 
 

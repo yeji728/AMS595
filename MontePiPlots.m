@@ -66,13 +66,17 @@ end
 approximated_value = 4 * num_inside_circle / fixed_n;
 
 % Random Points inside the circle and outside the circle
-subplot(3,1,3)
-scatter(x(index_inside), y(index_inside), 1, "b", "filled")
+subplot(3,1,3);
+scatter(x(index_inside), y(index_inside), 1, "b", "filled");
 
 
 % Random Points inside the circle and outside the circle
 hold on;
-scatter(x(~index_inside), y(~index_inside), 1, "r", "filled")
+scatter(x(~index_inside), y(~index_inside), 1, "r", "filled");
+plot_title = sprintf("Random points for n = %d \n Approximated pi is %.7f", fixed_n,approximated_value );
+title(plot_title);
+xlabel("x");
+ylabel("y");
 
 
 
