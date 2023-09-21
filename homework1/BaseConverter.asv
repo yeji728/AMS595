@@ -21,11 +21,6 @@ if mod(number ,1) > 0
     error("number should be integer");
 end
 
-if number < 0
-    error("number should be positive");
-end
-
-
 %check if number is valid
 for i = 1 : length(number)
     if str2double(number(i)) > n
@@ -40,11 +35,6 @@ m = input("Enter integer:");
 if m <2 || m>10 
    error("There is an error!! m should be between 2 and 10.") 
 
-end
-
-% check if m is integer
-if mod(m ,1) > 0 
-    error("number should be integer");
 end
 
 
